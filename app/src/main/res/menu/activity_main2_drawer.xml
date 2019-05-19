@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Accueil" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_menu_account_circle"
+            android:title="Profil" />
+        <item
+            android:id="@+id/nav_localisation"
+            android:icon="@drawable/ic_menu_location_on"
+            android:title="Lanala Localisation" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_menu_info"
+            android:title="Informations" />
+        <item
+            android:id="@+id/nav_notif"
+            android:icon="@drawable/ic_menu_notifications"
+            android:title="Notifications" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_key"
+                android:title="Déconnexion" />
+
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2.05"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Numero du contrat :"
+                android:textColor="@color/myPink"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="0.05"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="352"
+                android:textAlignment="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2.1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Nom du contrat :"
+                android:textColor="@color/myPink"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Type 102"
+                android:textAlignment="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2.1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Date de contrat:"
+                android:textColor="@color/myPink"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="10/02/2019"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2.1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Bénificaire en cas de vis:"
+                android:textColor="@color/myPink"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="BNA"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2.1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Bénificaire en cas de d'essais:"
+                android:textColor="@color/myPink"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="BNA"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2.1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Etat du Contrat"
+                android:textColor="@color/myPink"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="Server"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2.1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Montant épargne :"
+                android:textColor="@color/myPink"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="1233456"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2.1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Montant de risque :"
+                android:textColor="@color/myPink"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="Agence"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2.1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Périodicité :"
+                android:textColor="@color/myPink"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:text="Agence"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

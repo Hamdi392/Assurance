@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="100"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_marginRight="10dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/receipt"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="80"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:text="Produit :"
+            android:textSize="15sp"
+            android:textColor="@color/mainOrange"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="7.5"
+            android:layout_height="wrap_content"
+            android:text="Voiture"
+            android:textAlignment="textStart"
+            android:id="@+id/productId"
+            android:textSize="15sp"
+            android:textColor="#111"/>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:text="Du"
+                android:textSize="15sp"
+                android:textColor="@color/mainOrange"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3.5"
+                android:layout_height="wrap_content"
+                android:text="10/03/2019"
+                android:textAlignment="center"
+                android:id="@+id/duDatePolice"
+                android:textSize="15sp"
+                android:textColor="#111"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:text="Au"
+                android:textSize="15sp"
+                android:textColor="@color/mainOrange"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3.5"
+                android:layout_height="wrap_content"
+                android:text="10/03/2019"
+                android:textAlignment="center"
+                android:id="@+id/auDatePolice"
+                android:textSize="15sp"
+                android:textColor="#111"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2.5"
+                android:layout_height="wrap_content"
+                android:text="Etat :"
+                android:textSize="15sp"
+                android:textColor="@color/mainOrange"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="7.5"
+                android:layout_height="wrap_content"
+                android:text="En cours"
+                android:textAlignment="textStart"
+                android:id="@+id/etatIdPolice"
+                android:textSize="15sp"
+                android:textColor="#111"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/numPolice" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/casvie" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/casdeces" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

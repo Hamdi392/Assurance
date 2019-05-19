@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:minHeight="50dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_menu_account_circle"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:id="@+id/prenomRegister"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:hint="Prénom"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:minHeight="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_menu_account_circle"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:id="@+id/nomRegister"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:hint="Nom"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:minHeight="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_date_range"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:id="@+id/ddnRegister"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:hint="Date de naissance "/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:minHeight="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_mail"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:id="@+id/email"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:hint="Email"/>
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:minHeight="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_local_phone"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:id="@+id/mobileRgister"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:hint="Mobile"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:minHeight="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_password"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:id="@+id/passRgister"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:minHeight="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_password"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:id="@+id/passConfirmRgister"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:hint="Confirmer le mot de pass"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/mainOrange"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:text="S'inscrire"/>
+
+</LinearLayout>

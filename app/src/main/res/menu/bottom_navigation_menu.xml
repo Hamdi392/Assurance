@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/dtailseItem"
+        android:icon="@drawable/ic_details_main"
+        android:title="Détaille"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/quittanceimpaye"
+        android:icon="@drawable/ic_monetization"
+        android:title="Impayée"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/histoItem"
+        android:icon="@drawable/ic_history_main"
+        android:title="Historique"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/recieptItem"
+        android:icon="@drawable/ic_receipt_main"
+        android:title="Cotisation "
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/contactItem"
+        android:icon="@drawable/ic_contact_main"
+        android:title="Contact"
+        app:showAsAction="always" />
+
+</menu>

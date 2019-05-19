@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/colorMain"
+    tools:context=".InfoActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textStyle="italic|bold"
+        android:textSize="18sp"
+        android:text="LANALA ASSURANCES SA est une compagnie d’assurance au capital de 10.000.000.000 GNF (dix milliards Francs Guinéens) entièrement libéré. Notre siège social est situé au Boulevard Diallo Telly, Angle 3ème Avenue  Sandervalia, Kaloum-Conakry, République de Guinée, immatriculée au Registre du Commerce et du Crédit Mobilier sous le N°RCCM/GC-KAL/071.073B/2016 du 28 décembre 2016 avec le numéro d’Agrément D/2017/CAM/LOA/015 du 21 février 2017."/>
+
+</LinearLayout>
