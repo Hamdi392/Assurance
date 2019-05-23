@@ -194,9 +194,7 @@ public class Main2Activity extends AppCompatActivity
             Intent intent =  new Intent(Main2Activity.this, InfoActivity.class);
             startActivity(intent);
 
-        } else if (id == R.id.nav_notif) {
-
-        } else if (id == R.id.nav_logout) {
+        }  else if (id == R.id.nav_logout) {
 
             Intent intent =  new Intent(Main2Activity.this, MainActivity.class);
             startActivity(intent);

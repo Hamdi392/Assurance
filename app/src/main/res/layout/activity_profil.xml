@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:scaleType="fitXY"
-            android:src="@drawable/woman_avatar"/>
+            android:src="@drawable/avatarr"/>
 
         <TextView
             android:layout_width="match_parent"

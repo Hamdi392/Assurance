@@ -71,7 +71,7 @@
                     android:textSize="22sp"
                     android:textStyle="bold"
                     android:textColor="@color/colorPrimary"
-                    android:text="(+624) 54 2135 410"
+                    android:text="(+624) 54 215 410"
                     android:textAlignment="center"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -140,6 +140,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
+                android:id="@+id/appelerContact"
                 android:background="@color/mainOrange"
                 android:textColor="@color/white"
                 android:layout_marginTop="50dp"

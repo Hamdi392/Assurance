@@ -19,7 +19,7 @@
         android:layout_width="96dp"
         android:paddingTop="@dimen/appbar_padding_top"
         android:layout_height="96dp"
-        android:src="@drawable/woman_avatar"
+        android:src="@drawable/avatarr"
         app:civ_border_width="2dp"
         app:civ_border_color="#FF000000"/>
 

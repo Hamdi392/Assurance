@@ -7,10 +7,9 @@ import ss.com.bannerslider.viewholder.ImageSlideViewHolder;
 
 public class MainSliderAdapter extends SliderAdapter {
 
-    public int nb;
     @Override
     public int getItemCount() {
-        return nb;
+        return 3;
     }
 
     @Override

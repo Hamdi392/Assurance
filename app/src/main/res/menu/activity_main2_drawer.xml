@@ -20,10 +20,6 @@
             android:id="@+id/nav_info"
             android:icon="@drawable/ic_menu_info"
             android:title="Informations" />
-        <item
-            android:id="@+id/nav_notif"
-            android:icon="@drawable/ic_menu_notifications"
-            android:title="Notifications" />
     </group>
 
     <item android:title="">

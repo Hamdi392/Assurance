@@ -30,7 +30,7 @@
                 android:layout_weight="4.5"
                 android:layout_height="wrap_content"
                 android:text="2540524"
-                android:id="@+id/contratNumberId"
+                android:id="@+id/contratNumberImpaye"
                 android:textSize="15sp"
                 android:textColor="@color/mainOrange"/>
 
@@ -48,7 +48,7 @@
                 android:layout_weight="3"
                 android:layout_height="wrap_content"
                 android:text="10/03/2019"
-                android:id="@+id/contratDaterId"
+                android:id="@+id/dateeffimayee"
                 android:textAlignment="textEnd"
                 android:textSize="15sp"
                 android:textColor="#111"/>
@@ -74,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:text="10/03/2019"
                 android:textAlignment="center"
-                android:id="@+id/productId"
+                android:id="@+id/duidimayee"
                 android:textSize="15sp"
                 android:textColor="#111"/>
 
@@ -92,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:text="10/03/2019"
                 android:textAlignment="center"
-                android:id="@+id/producth"
+                android:id="@+id/audateimpayee"
                 android:textSize="15sp"
                 android:textColor="#111"/>
 
@@ -116,9 +116,9 @@
                 android:layout_width="0dp"
                 android:layout_weight="6"
                 android:layout_height="wrap_content"
-                android:text="En cours"
+                android:text="12540"
                 android:textAlignment="textStart"
-                android:id="@+id/etatId"
+                android:id="@+id/montantimpaye"
                 android:textSize="15sp"
                 android:textColor="#111"/>
 
