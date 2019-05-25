@@ -27,71 +27,6 @@
             android:id="@+id/nomID"
             android:text="Sandra Adams"/>
 
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:weightSum="10"-->
-            <!--android:orientation="horizontal">-->
-            <!--<ImageView-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_weight="2"-->
-                <!--android:layout_height="35dp"-->
-                <!--android:src="@drawable/ic_menu_account_circle"/>-->
-
-            <!--<TextView-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_weight="3"-->
-                <!--android:textSize="18sp"-->
-                <!--android:textStyle="bold"-->
-                <!--android:gravity="center_vertical"-->
-                <!--android:textColor="@color/black"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:text="Nom :"/>-->
-            <!--<TextView-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_weight="6"-->
-                <!--android:textSize="20sp"-->
-                <!--android:textStyle="bold"-->
-                <!--android:gravity="center_vertical"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:text="Adams"/>-->
-
-        <!--</LinearLayout>-->
-
-
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:weightSum="10"-->
-            <!--android:layout_marginTop="10dp"-->
-            <!--android:orientation="horizontal">-->
-            <!--<ImageView-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_weight="2"-->
-                <!--android:layout_height="35dp"-->
-                <!--android:src="@drawable/ic_menu_account_circle"/>-->
-
-            <!--<TextView-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_weight="3"-->
-                <!--android:textSize="18sp"-->
-                <!--android:textStyle="bold"-->
-                <!--android:gravity="center_vertical"-->
-                <!--android:textColor="@color/black"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:text="Prénom :"/>-->
-            <!--<TextView-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_weight="6"-->
-                <!--android:textSize="20sp"-->
-                <!--android:textStyle="bold"-->
-                <!--android:gravity="center_vertical"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:text="Sandra"/>-->
-
-        <!--</LinearLayout>-->
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -110,7 +45,6 @@
                 android:layout_width="0dp"
                 android:layout_weight="2.5"
                 android:textSize="18sp"
-                android:textStyle="bold"
                 android:gravity="center_vertical"
                 android:textColor="@color/black"
                 android:layout_height="match_parent"
@@ -120,7 +54,6 @@
                 android:layout_weight="5.5"
                 android:textSize="18sp"
                 android:textAlignment="center"
-                android:textStyle="bold"
                 android:id="@+id/mobileID"
                 android:gravity="center_vertical"
                 android:layout_height="match_parent"
@@ -151,7 +84,6 @@
                 android:layout_width="0dp"
                 android:layout_weight="2.5"
                 android:textSize="18sp"
-                android:textStyle="bold"
                 android:gravity="center_vertical"
                 android:textColor="@color/black"
                 android:layout_height="match_parent"
@@ -160,7 +92,6 @@
                 android:layout_width="0dp"
                 android:layout_weight="5.5"
                 android:textSize="17sp"
-                android:textStyle="bold"
                 android:textAlignment="center"
                 android:gravity="center_vertical"
                 android:id="@+id/emailID"
@@ -192,7 +123,6 @@
                 android:layout_width="0dp"
                 android:layout_weight="2.5"
                 android:textSize="16sp"
-                android:textStyle="bold"
                 android:gravity="center_vertical"
                 android:textColor="@color/black"
                 android:layout_height="wrap_content"

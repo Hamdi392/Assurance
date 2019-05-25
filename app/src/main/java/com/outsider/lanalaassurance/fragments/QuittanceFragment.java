@@ -3,7 +3,9 @@ package com.outsider.lanalaassurance.fragments;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.text.InputType;
@@ -63,6 +65,7 @@ public class QuittanceFragment extends Fragment {
         periode.setText(dates);
 
         btnquitance.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View view) {
 
@@ -70,17 +73,18 @@ public class QuittanceFragment extends Fragment {
                 linearLayout.setOrientation(LinearLayout.VERTICAL);
 
                 final TextView textView = new TextView(getContext());
-                textView.setText("0");
+                textView.setText("1000");
                 textView.setTextSize(16);
                 textView.setGravity(Gravity.CENTER);
 
                 final SeekBar seekBar = new SeekBar(getContext());
-                seekBar.setMax(1000);
+                seekBar.setMax(99000);
 
                 seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
                     @Override
                     public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                        textView.setText(String.valueOf(i));
+                        int MIN = 1000;
+                        textView.setText(String.valueOf(i+MIN));
                     }
                     @Override
                     public void onStartTrackingTouch(SeekBar seekBar) {

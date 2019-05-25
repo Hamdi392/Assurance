@@ -32,7 +32,7 @@
                     android:text="Numero du contrat :"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:layout_height="wrap_content" />
                 <Space
                     android:layout_width="0dp"
@@ -43,7 +43,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:textSize="20sp"
-                    android:textStyle="bold"
+                    
                     android:textColor="@color/mainOrange"
                     android:text="352"
                     android:id="@+id/numPoliceD"
@@ -63,7 +63,7 @@
                     android:text="Nom du contrat :"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:layout_height="wrap_content" />
                 <Space
                     android:layout_width="0dp"
@@ -74,7 +74,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:id="@+id/nomPoliceD"
                     android:textColor="@color/mainOrange"
                     android:text="Type 102"
@@ -94,7 +94,7 @@
                     android:text="Date de contrat:"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:layout_height="wrap_content" />
                 <Space
                     android:layout_width="0dp"
@@ -105,7 +105,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:textSize="20sp"
-                    android:textStyle="bold"
+                    
                     android:textColor="@color/mainOrange"
                     android:textAlignment="center"
                     android:id="@+id/datePoliceD"
@@ -125,7 +125,7 @@
                     android:text="Etat du Contrat"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:layout_height="wrap_content" />
                 <Space
                     android:layout_width="0dp"
@@ -136,7 +136,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:textSize="20sp"
-                    android:textStyle="bold"
+                    
                     android:id="@+id/etatPoliceDl"
                     android:textColor="@color/mainOrange"
                     android:textAlignment="center"
@@ -165,7 +165,7 @@
                     android:text="Béneficiaire en cas de vie:"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:layout_height="wrap_content" />
                 <Space
                     android:layout_width="0dp"
@@ -176,7 +176,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:textSize="16sp"
-                    android:textStyle="bold"
+                    
                     android:textColor="@color/mainOrange"
                     android:textAlignment="center"
                     android:text="Client"
@@ -198,7 +198,7 @@
                     android:text="Béneficiaire en cas de décès :"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                     />
 
                 <Space
                     android:layout_width="0dp"
@@ -214,7 +214,7 @@
                     android:textAlignment="center"
                     android:textColor="@color/mainOrange"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                     />
             </LinearLayout>
 
         </LinearLayout>
@@ -239,7 +239,7 @@
                     android:text="Capital Constitue"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:layout_height="wrap_content" />
                 <Space
                     android:layout_width="0dp"
@@ -250,7 +250,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:id="@+id/capitalc"
                     android:textColor="@color/mainOrange"
                     android:textAlignment="center"
@@ -271,7 +271,7 @@
                     android:text="Montant épargne :"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:layout_height="wrap_content" />
                 <Space
                     android:layout_width="0dp"
@@ -283,7 +283,7 @@
                     android:layout_weight="1"
                     android:textSize="18sp"
                     android:id="@+id/monteparge"
-                    android:textStyle="bold"
+                    
                     android:textColor="@color/mainOrange"
                     android:textAlignment="center"
                     android:text="-"
@@ -303,7 +303,7 @@
                     android:text="Montant de risque :"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:layout_height="wrap_content" />
                 <Space
                     android:layout_width="0dp"
@@ -315,7 +315,7 @@
                     android:layout_weight="1"
                     android:textSize="18sp"
                     android:id="@+id/montrisque"
-                    android:textStyle="bold"
+                    
                     android:textColor="@color/mainOrange"
                     android:textAlignment="center"
                     android:text="-"
@@ -334,7 +334,7 @@
                     android:text="Mode de payement :"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:layout_height="wrap_content" />
                 <Space
                     android:layout_width="0dp"
@@ -346,7 +346,7 @@
                     android:layout_weight="1"
                     android:textSize="18sp"
                     android:id="@+id/modepay"
-                    android:textStyle="bold"
+                    
                     android:textColor="@color/mainOrange"
                     android:textAlignment="center"
                     android:text="-"
@@ -366,7 +366,7 @@
                     android:text="Périodicité :"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:layout_height="wrap_content" />
                 <Space
                     android:layout_width="0dp"
@@ -378,7 +378,7 @@
                     android:layout_weight="1"
                     android:textSize="18sp"
                     android:id="@+id/periodic"
-                    android:textStyle="bold"
+                    
                     android:textColor="@color/mainOrange"
                     android:textAlignment="center"
                     android:text="-"

@@ -22,7 +22,7 @@
         <item name="colorAccent">@color/mainOrange</item>
     </style>
 
-    <style name="AppThemeReg" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppThemeReg" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#02d2e4</item>
         <item name="colorPrimaryDark">#02d2e4</item>

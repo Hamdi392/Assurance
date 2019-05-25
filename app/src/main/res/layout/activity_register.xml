@@ -26,15 +26,17 @@
             android:layout_weight="2"
             android:layout_gravity="center"
             android:layout_height="35dp"
-            android:src="@drawable/ic_menu_account_circle"/>
+            android:src="@drawable/ic_account_circle_white"/>
         <EditText
             android:layout_width="0dp"
             android:layout_weight="8"
             android:textSize="18sp"
             android:textAlignment="center"
-            android:textStyle="bold"
+            
             android:id="@+id/prenomRegister"
             android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:layout_height="match_parent"
             android:hint="Prénom"/>
 
@@ -52,16 +54,18 @@
             android:layout_weight="2"
             android:layout_gravity="center"
             android:layout_height="35dp"
-            android:src="@drawable/ic_menu_account_circle"/>
+            android:src="@drawable/ic_account_circle_white"/>
 
         <EditText
             android:layout_width="0dp"
             android:layout_weight="8"
             android:textSize="18sp"
             android:textAlignment="center"
-            android:textStyle="bold"
+            
             android:id="@+id/nomRegister"
             android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:layout_height="match_parent"
             android:hint="Nom"/>
 
@@ -79,16 +83,18 @@
             android:layout_weight="2"
             android:layout_gravity="center"
             android:layout_height="35dp"
-            android:src="@drawable/ic_date_range"/>
+            android:src="@drawable/ic_date_range_white"/>
 
         <EditText
             android:layout_width="0dp"
             android:layout_weight="8"
             android:textSize="18sp"
             android:textAlignment="center"
-            android:textStyle="bold"
+            
             android:id="@+id/ddnRegister"
             android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:layout_height="match_parent"
             android:hint="Date de naissance "/>
 
@@ -107,16 +113,18 @@
         android:layout_weight="2"
         android:layout_gravity="center"
         android:layout_height="35dp"
-        android:src="@drawable/ic_mail"/>
+        android:src="@drawable/ic_mail_white"/>
 
     <EditText
         android:layout_width="0dp"
         android:layout_weight="8"
         android:textSize="18sp"
         android:textAlignment="center"
-        android:textStyle="bold"
+        
         android:id="@+id/email"
         android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:layout_height="match_parent"
         android:hint="Email"/>
 
@@ -135,16 +143,18 @@
             android:layout_weight="2"
             android:layout_gravity="center"
             android:layout_height="35dp"
-            android:src="@drawable/ic_local_phone"/>
+            android:src="@drawable/ic_phone_white"/>
 
         <EditText
             android:layout_width="0dp"
             android:layout_weight="8"
             android:textSize="18sp"
             android:textAlignment="center"
-            android:textStyle="bold"
+            
             android:id="@+id/mobileRgister"
             android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:layout_height="match_parent"
             android:hint="Mobile"/>
 
@@ -163,17 +173,19 @@
             android:layout_weight="2"
             android:layout_gravity="center"
             android:layout_height="35dp"
-            android:src="@drawable/ic_password"/>
+            android:src="@drawable/ic_lock_white"/>
 
         <EditText
             android:layout_width="0dp"
             android:layout_weight="8"
             android:textSize="18sp"
             android:textAlignment="center"
-            android:textStyle="bold"
+            
             android:id="@+id/passRgister"
             android:hint="Mot de passe"
             android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:gravity="center_vertical"
             android:layout_height="match_parent"
             />
@@ -193,17 +205,19 @@
             android:layout_weight="2"
             android:layout_gravity="center"
             android:layout_height="35dp"
-            android:src="@drawable/ic_password"/>
+            android:src="@drawable/ic_lock_white"/>
 
         <EditText
             android:layout_width="0dp"
             android:layout_weight="8"
             android:textSize="18sp"
             android:textAlignment="center"
-            android:textStyle="bold"
+            
             android:id="@+id/passConfirmRgister"
             android:gravity="center_vertical"
             android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:hint="Confirmer le mot de pass"/>
 
     </LinearLayout>

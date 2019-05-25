@@ -36,7 +36,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1.5"
                     android:textSize="25sp"
-                    android:textStyle="bold"
+                    
                     android:id="@+id/policeNameTop"
                     android:textColor="@color/colorPrimary"
                     android:textAlignment="textStart"
@@ -56,7 +56,7 @@
                     android:text="Numero contrat :"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:layout_height="wrap_content" />
                 <Space
                     android:layout_width="0dp"
@@ -67,7 +67,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:id="@+id/numeroPolicecot"
                     android:textColor="@color/mainOrange"
                     android:text="352"
@@ -87,7 +87,7 @@
                     android:text="Nom produit :"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:layout_height="wrap_content" />
                 <Space
                     android:layout_width="0dp"
@@ -98,7 +98,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:id="@+id/nomPolicecot"
                     android:textColor="@color/mainOrange"
                     android:text="Mercedes E300"
@@ -118,7 +118,7 @@
                     android:text="Période :"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:layout_height="wrap_content" />
                 <Space
                     android:layout_width="0dp"
@@ -129,7 +129,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:id="@+id/periodecot"
                     android:textColor="@color/mainOrange"
                     android:text="2019"
@@ -149,7 +149,7 @@
                     android:text="Etat :"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:layout_height="wrap_content" />
                 <Space
                     android:layout_width="0dp"
@@ -161,7 +161,7 @@
                     android:layout_weight="1"
                     android:id="@+id/etatcot"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:textColor="@color/mainOrange"
                     android:text="En Cours"
                     android:textAlignment="center"
@@ -180,7 +180,7 @@
                     android:text="Mois :"
                     android:textColor="@color/colorPrimary"
                     android:textSize="18sp"
-                    android:textStyle="bold"
+                    
                     android:layout_height="wrap_content" />
                 <Space
                     android:layout_width="0dp"
