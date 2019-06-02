@@ -68,10 +68,12 @@
         <activity
             android:name=".ContractDetailsActivity"
             android:parentActivityName=".Main2Activity" />
-        <activity android:name=".RegisterActivity"
-            android:theme="@style/AppThemeReg"
+        <activity
+            android:name=".RegisterActivity"
             android:label="Inscription"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppThemeReg" />
+        <activity android:name=".WebPaymentActivity"></activity>
     </application>
 
 </manifest>

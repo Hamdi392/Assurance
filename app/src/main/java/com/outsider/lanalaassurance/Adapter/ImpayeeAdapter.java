@@ -12,8 +12,9 @@ import android.widget.TextView;
 import com.outsider.lanalaassurance.Impayee;
 import com.outsider.lanalaassurance.R;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Date;
 
 public class ImpayeeAdapter extends ArrayAdapter<Impayee> {
 
@@ -39,12 +40,24 @@ public class ImpayeeAdapter extends ArrayAdapter<Impayee> {
         TextView montant = convertView.findViewById(R.id.montantimpaye);
 
         Impayee impayee = getItem(position);
+        Date du = new Date(), au = new Date(), eff = new Date();
+        SimpleDateFormat dateFormat= new SimpleDateFormat("dd/MM/yyyy");
+        try {
+             du=dateFormat.parse(impayee.getDate_du());
+             au=dateFormat.parse(impayee.getDate_au());
+             eff=dateFormat.parse(impayee.getDate_effet_quittance());
 
-        num.setText(impayee.getNumContart());
-        dateeff.setText(impayee.getDateEffet());
-        datedebut.setText(impayee.getDateDebut());
-        datefin.setText(impayee.getDateFin());
-        montant.setText(impayee.getMonatnt());
+        }
+        catch(Exception e) {
+            //java.text.ParseException: Unparseable date: Geting error
+            System.out.println("Excep"+e);
+        }
+
+        num.setText(impayee.getNumero_quittance());
+        dateeff.setText(dateFormat.format(au));
+        datedebut.setText(dateFormat.format(du));
+        datefin.setText(dateFormat.format(eff));
+        montant.setText(impayee.getMontant_quittance());
 
         return convertView;
     }

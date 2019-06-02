@@ -9,12 +9,15 @@
    <ListView
        android:layout_width="match_parent"
        android:layout_height="match_parent"
+       android:layout_above="@+id/btnpayeimapyee"
        android:id="@+id/listimpayee"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:textAllCaps="false"
+        android:id="@+id/btnpayeimapyee"
         android:layout_alignParentBottom="true"
         android:background="@color/mainOrange"
         android:textColor="#fff"

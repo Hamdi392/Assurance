@@ -143,7 +143,13 @@ public class ContractDetailsActivity extends AppCompatActivity {
 
                 case R.id.quittanceimpaye:
                     fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction.replace(R.id.container, new ImpayeeFragment());
+                    Bundle bundle4 = new Bundle();
+                    bundle4.putString("id", id);
+                    bundle4.putString("codeclient", codeclient);
+                    bundle4.putString("num", num);
+                    ImpayeeFragment impayeeFragment = new ImpayeeFragment();
+                    impayeeFragment.setArguments(bundle4);
+                    fragmentTransaction.replace(R.id.container, impayeeFragment);
                     fragmentTransaction.commit();
 
                     changeTitle("Quittance impayée");

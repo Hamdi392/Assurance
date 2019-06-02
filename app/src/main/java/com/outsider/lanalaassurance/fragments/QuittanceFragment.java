@@ -2,6 +2,7 @@ package com.outsider.lanalaassurance.fragments;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -23,6 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.outsider.lanalaassurance.R;
+import com.outsider.lanalaassurance.WebPaymentActivity;
 
 
 public class QuittanceFragment extends Fragment {
@@ -105,7 +107,8 @@ public class QuittanceFragment extends Fragment {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             dialogInterface.dismiss();
-                           // linearLayout.removeAllViews();
+                           Intent intent = new Intent(getActivity(), WebPaymentActivity.class);
+                           getActivity().startActivity(intent);
                         }
                     });
                     alertDialog.setNegativeButton("Annuler", new DialogInterface.OnClickListener() {

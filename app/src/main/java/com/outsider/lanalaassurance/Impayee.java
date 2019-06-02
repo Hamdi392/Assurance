@@ -2,61 +2,61 @@ package com.outsider.lanalaassurance;
 
 public class Impayee {
 
-    private String numContart;
-    private String dateEffet;
-    private String dateDebut;
-    private String dateFin;
-    private String monatnt;
+    private String numero_quittance;
+    private String date_effet_quittance;
+    private String date_du;
+    private String date_au;
+    private String montant_quittance;
 
 
     public Impayee() {
     }
 
-    public Impayee(String numContart, String dateEffet, String dateDebut, String dateFin, String monatnt) {
-        this.numContart = numContart;
-        this.dateEffet = dateEffet;
-        this.dateDebut = dateDebut;
-        this.dateFin = dateFin;
-        this.monatnt = monatnt;
+    public Impayee(String numero_quittance, String date_effet_quittance, String date_du, String date_au, String montant_quittance) {
+        this.numero_quittance = numero_quittance;
+        this.date_effet_quittance = date_effet_quittance;
+        this.date_du = date_du;
+        this.date_au = date_au;
+        this.montant_quittance = montant_quittance;
     }
 
-    public String getNumContart() {
-        return numContart;
+    public String getNumero_quittance() {
+        return numero_quittance;
     }
 
-    public void setNumContart(String numContart) {
-        this.numContart = numContart;
+    public void setNumero_quittance(String numero_quittance) {
+        this.numero_quittance = numero_quittance;
     }
 
-    public String getDateEffet() {
-        return dateEffet;
+    public String getDate_effet_quittance() {
+        return date_effet_quittance;
     }
 
-    public void setDateEffet(String dateEffet) {
-        this.dateEffet = dateEffet;
+    public void setDate_effet_quittance(String date_effet_quittance) {
+        this.date_effet_quittance = date_effet_quittance;
     }
 
-    public String getDateDebut() {
-        return dateDebut;
+    public String getDate_du() {
+        return date_du;
     }
 
-    public void setDateDebut(String dateDebut) {
-        this.dateDebut = dateDebut;
+    public void setDate_du(String date_du) {
+        this.date_du = date_du;
     }
 
-    public String getDateFin() {
-        return dateFin;
+    public String getDate_au() {
+        return date_au;
     }
 
-    public void setDateFin(String dateFin) {
-        this.dateFin = dateFin;
+    public void setDate_au(String date_au) {
+        this.date_au = date_au;
     }
 
-    public String getMonatnt() {
-        return monatnt;
+    public String getMontant_quittance() {
+        return montant_quittance;
     }
 
-    public void setMonatnt(String monatnt) {
-        this.monatnt = monatnt;
+    public void setMontant_quittance(String montant_quittance) {
+        this.montant_quittance = montant_quittance;
     }
 }

@@ -1,21 +1,37 @@
 package com.outsider.lanalaassurance.fragments;
 
 
+import android.app.ProgressDialog;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.koushikdutta.async.future.FutureCallback;
+import com.koushikdutta.ion.Ion;
 import com.outsider.lanalaassurance.Adapter.ImpayeeAdapter;
+import com.outsider.lanalaassurance.Adapter.ListContartAdapter;
 import com.outsider.lanalaassurance.Impayee;
+import com.outsider.lanalaassurance.Main2Activity;
+import com.outsider.lanalaassurance.MainActivity;
+import com.outsider.lanalaassurance.Police;
 import com.outsider.lanalaassurance.R;
 
 import java.util.ArrayList;
 
+import static android.content.Context.MODE_PRIVATE;
+
 public class ImpayeeFragment extends Fragment {
 
+
+    private ProgressDialog progressDialog;
 
     public ImpayeeFragment() {
         // Required empty public constructor
@@ -27,15 +43,57 @@ public class ImpayeeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_impayee, container, false);
 
-        ArrayList<Impayee> impayeeArrayList = new ArrayList<>();
-        impayeeArrayList.add(new Impayee("741258744554", "12/05/2019", "25/01/2018", "14/06/2018", "2500"));
-        impayeeArrayList.add(new Impayee("741258744554", "12/05/2019", "25/01/2018", "14/06/2018", "2500"));
-        impayeeArrayList.add(new Impayee("741258744554", "12/05/2019", "25/01/2018", "14/06/2018", "2500"));
+        progressDialog = new ProgressDialog(getActivity());
+        progressDialog.setMessage("S'il vous plaît, attendez..");
+        progressDialog.setTitle("Chargement");
+        progressDialog.setCancelable(false);
+        progressDialog.show();
 
-        ListView listView = view.findViewById(R.id.listimpayee);
+        String id = getArguments().getString("id");
+        String codeclient = getArguments().getString("codeclient");
+        String num = getArguments().getString("num");
+        final ListView listView = view.findViewById(R.id.listimpayee);
+        final ArrayList<Impayee> impayeeArrayList = new ArrayList<>();
 
-        ImpayeeAdapter impayeeAdapter = new ImpayeeAdapter(getContext(), impayeeArrayList);
-        listView.setAdapter(impayeeAdapter);
+        if (id != null) {
+            Ion.with(getActivity())
+                    .load("https://edi.proassur.tn/api.proassur_vie/api/vie/GetListeQuittancesImpayees?UserId="+
+                            codeclient+"&ContratId="+num+"&codeSession="+id)
+                    .asJsonObject()
+                    .setCallback(new FutureCallback<JsonObject>() {
+                        @Override
+                        public void onCompleted(Exception e, JsonObject result) {
+                            progressDialog.dismiss();
+                            if(result != null){
+                                //Toast.makeText(MainActivity.this, result.get("code").toString(), Toast.LENGTH_SHORT).show();
+                                Log.d("d","************* "+result.get("message")+" ***********");
+                                if(result.get("code").toString().equals("200")){
+
+                                    Gson gson = new Gson();
+                                    Impayee[] impayees = gson.fromJson(result.get("quittancesImapyees").toString(), Impayee[].class);
+                                    for(Impayee impayee : impayees){
+                                        impayeeArrayList.add(impayee);
+                                    }
+
+                                    progressDialog.dismiss();
+                                    ImpayeeAdapter impayeeAdapter = new ImpayeeAdapter(getContext(), impayeeArrayList);
+                                    listView.setAdapter(impayeeAdapter);
+
+                                }else if(result.get("code").toString().equals("502")){
+                                    progressDialog.dismiss();
+                                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                                    startActivity(intent);
+                                    getActivity().finish();
+
+                                }else{
+                                    progressDialog.dismiss();
+                                }
+                            }
+                        }
+                    });
+        }
+
+
 
         return view;
     }
