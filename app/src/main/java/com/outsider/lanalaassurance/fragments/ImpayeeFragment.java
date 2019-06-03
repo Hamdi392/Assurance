@@ -17,6 +17,7 @@ import android.widget.CheckBox;
 import android.widget.ListView;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
@@ -27,6 +28,7 @@ import com.outsider.lanalaassurance.Main2Activity;
 import com.outsider.lanalaassurance.MainActivity;
 import com.outsider.lanalaassurance.Police;
 import com.outsider.lanalaassurance.R;
+import com.outsider.lanalaassurance.WebPaymentActivity;
 
 import java.util.ArrayList;
 
@@ -57,8 +59,8 @@ public class ImpayeeFragment extends Fragment {
 
         btnSubmit = view.findViewById(R.id.btnpayeimapyee);
 
-        String id = getArguments().getString("id");
-        String codeclient = getArguments().getString("codeclient");
+        final String id = getArguments().getString("id");
+        final String codeclient = getArguments().getString("codeclient");
         String num = getArguments().getString("num");
         final ListView listView = view.findViewById(R.id.listimpayee);
         final ArrayList<Impayee> impayeeArrayList = new ArrayList<>();
@@ -105,15 +107,51 @@ public class ImpayeeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 ArrayList<Impayee> impayees = ((ImpayeeAdapter)listView.getAdapter()).getSelectActorList();
+                JsonArray jsonArray = new JsonArray();
                  for(int i=0; i<impayees.size(); i++){
-
-                    //System.out.println("-----------*-*-*-*-*-* : "+impayeeArrayList.get(i).isIsselected());
                     System.out.println("-----------*-*-*-*-*-* : "+impayees.get(i).getNumero_quittance()+ "*** "+impayees.get(i).isIsselected());
+
+                     JsonObject jsonObject = new JsonObject();
+                     jsonObject.addProperty("numero_quittance", impayees.get(i).getNumero_quittance());
+                     String montant = impayees.get(i).getMontant_quittance();
+                     jsonObject.addProperty("montant", Integer.parseInt(montant.replaceAll("\\s+","")));
+
+                     jsonArray.add(jsonObject);
                  }
+                 payer(codeclient, id, jsonArray);
             }
         });
 
         return view;
+    }
+
+    private void payer(String code, String id, JsonArray list) {
+
+
+        JsonObject json = new JsonObject();
+        json.addProperty("code_client", code);
+        json.addProperty("codeSession", id);
+        json.addProperty("codeSession", id);
+        json.add("ListQuittance", list);
+
+        System.out.println(json);
+
+        Ion.with(getActivity())
+                .load("https://edi.proassur.tn/PROASSUR.LANALA/WebUI/Financier/PaiementEnLigneInMobile.aspx")
+                .setJsonObjectBody(json)
+                .asString()
+                .setCallback(new FutureCallback<String>() {
+                    @Override
+                    public void onCompleted(Exception e, String result) {
+
+                        Log.d("d",result);
+                        progressDialog.dismiss();
+                        Intent intent = new Intent(getActivity(), WebPaymentActivity.class);
+                        intent.putExtra("data", result);
+                        startActivity(intent);
+
+                    }
+                });
     }
 
 }

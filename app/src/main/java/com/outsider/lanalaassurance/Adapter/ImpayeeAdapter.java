@@ -61,13 +61,18 @@ public class ImpayeeAdapter extends ArrayAdapter<Impayee> {
         datedebut.setText(dateFormat.format(du));
         datefin.setText(dateFormat.format(eff));
         montant.setText(impayee.getMontant_quittance());
+        checkBox.setChecked(impayee.isIsselected());
 
         checkBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                boolean isSelected = checkBox.isSelected();
-                mydata.get(position).setIsselected(true);
-                System.out.println(mydata.get(position).isIsselected());
+                if (mydata.get(position).isIsselected()){
+                    mydata.get(position).setIsselected(false);
+                }else{
+                    mydata.get(position).setIsselected(true);
+                }
+
+
             }
         });
 
