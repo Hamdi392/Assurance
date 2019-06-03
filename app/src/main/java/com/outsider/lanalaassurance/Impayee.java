@@ -7,7 +7,16 @@ public class Impayee {
     private String date_du;
     private String date_au;
     private String montant_quittance;
+    private boolean isselected;
 
+
+    public boolean isIsselected() {
+        return isselected;
+    }
+
+    public void setIsselected(boolean isselected) {
+        this.isselected = isselected;
+    }
 
     public Impayee() {
     }

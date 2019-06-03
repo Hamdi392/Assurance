@@ -5,11 +5,15 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewParent;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ListView;
 
 import com.google.gson.Gson;
@@ -32,6 +36,8 @@ public class ImpayeeFragment extends Fragment {
 
 
     private ProgressDialog progressDialog;
+    Button btnSubmit;
+    ImpayeeAdapter impayeeAdapter;
 
     public ImpayeeFragment() {
         // Required empty public constructor
@@ -48,6 +54,8 @@ public class ImpayeeFragment extends Fragment {
         progressDialog.setTitle("Chargement");
         progressDialog.setCancelable(false);
         progressDialog.show();
+
+        btnSubmit = view.findViewById(R.id.btnpayeimapyee);
 
         String id = getArguments().getString("id");
         String codeclient = getArguments().getString("codeclient");
@@ -76,7 +84,7 @@ public class ImpayeeFragment extends Fragment {
                                     }
 
                                     progressDialog.dismiss();
-                                    ImpayeeAdapter impayeeAdapter = new ImpayeeAdapter(getContext(), impayeeArrayList);
+                                    impayeeAdapter = new ImpayeeAdapter(getContext(), impayeeArrayList);
                                     listView.setAdapter(impayeeAdapter);
 
                                 }else if(result.get("code").toString().equals("502")){
@@ -93,7 +101,17 @@ public class ImpayeeFragment extends Fragment {
                     });
         }
 
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ArrayList<Impayee> impayees = ((ImpayeeAdapter)listView.getAdapter()).getSelectActorList();
+                 for(int i=0; i<impayees.size(); i++){
 
+                    //System.out.println("-----------*-*-*-*-*-* : "+impayeeArrayList.get(i).isIsselected());
+                    System.out.println("-----------*-*-*-*-*-* : "+impayees.get(i).getNumero_quittance()+ "*** "+impayees.get(i).isIsselected());
+                 }
+            }
+        });
 
         return view;
     }

@@ -9,6 +9,7 @@
 
     <CheckBox
         android:layout_width="0dp"
+        android:id="@+id/checkboximpayee"
         android:layout_gravity="center"
         android:layout_height="match_parent"
         android:layout_weight="10"/>

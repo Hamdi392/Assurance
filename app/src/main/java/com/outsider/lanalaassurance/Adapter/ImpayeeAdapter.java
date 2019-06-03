@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.outsider.lanalaassurance.Impayee;
@@ -20,6 +21,7 @@ public class ImpayeeAdapter extends ArrayAdapter<Impayee> {
 
     private Context ctx;
     private ArrayList<Impayee> mydata;
+    private CheckBox checkBox;
     public ImpayeeAdapter(@NonNull Context context, @NonNull ArrayList<Impayee> objects) {
         super(context, R.layout.item_impayee, objects);
         this.ctx = context;
@@ -28,7 +30,7 @@ public class ImpayeeAdapter extends ArrayAdapter<Impayee> {
 
     @NonNull
     @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+    public View getView(final int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
 
         convertView = LayoutInflater.from(ctx).inflate(R.layout.item_impayee,parent, false);
@@ -38,6 +40,7 @@ public class ImpayeeAdapter extends ArrayAdapter<Impayee> {
         TextView datedebut = convertView.findViewById(R.id.duidimayee);
         TextView datefin = convertView.findViewById(R.id.audateimpayee);
         TextView montant = convertView.findViewById(R.id.montantimpaye);
+        checkBox = convertView.findViewById(R.id.checkboximpayee);
 
         Impayee impayee = getItem(position);
         Date du = new Date(), au = new Date(), eff = new Date();
@@ -59,6 +62,26 @@ public class ImpayeeAdapter extends ArrayAdapter<Impayee> {
         datefin.setText(dateFormat.format(eff));
         montant.setText(impayee.getMontant_quittance());
 
+        checkBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boolean isSelected = checkBox.isSelected();
+                mydata.get(position).setIsselected(true);
+                System.out.println(mydata.get(position).isIsselected());
+            }
+        });
+
         return convertView;
     }
+
+
+    public ArrayList<Impayee> getSelectActorList(){
+        ArrayList<Impayee> list = new ArrayList<>();
+        for(int i=0;i<mydata.size();i++){
+            if(mydata.get(i).isIsselected())
+                list.add(mydata.get(i));
+        }
+        return list;
+    }
+
 }

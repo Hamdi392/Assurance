@@ -3,6 +3,7 @@ package com.outsider.lanalaassurance;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
+import android.webkit.WebView;
 import android.widget.TextView;
 
 public class WebPaymentActivity extends AppCompatActivity {
@@ -12,7 +13,10 @@ public class WebPaymentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_payment);
 
-        TextView textView = findViewById(R.id.textViewHtml);
-       // textView.setText(Html.fromHtml(getString(R.string.nice_html)));
+        String data = getIntent().getStringExtra("data");
+
+        WebView webview = findViewById(R.id.webview);
+        webview.getSettings().setJavaScriptEnabled(true);
+        webview.loadDataWithBaseURL("", data, "text/html", "UTF-8", "");
     }
 }
