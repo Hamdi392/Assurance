@@ -15,6 +15,7 @@ import android.view.ViewParent;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
@@ -58,6 +59,7 @@ public class ImpayeeFragment extends Fragment {
         progressDialog.show();
 
         btnSubmit = view.findViewById(R.id.btnpayeimapyee);
+        btnSubmit.setEnabled(false);
 
         final String id = getArguments().getString("id");
         final String codeclient = getArguments().getString("codeclient");
@@ -88,12 +90,17 @@ public class ImpayeeFragment extends Fragment {
                                     progressDialog.dismiss();
                                     impayeeAdapter = new ImpayeeAdapter(getContext(), impayeeArrayList);
                                     listView.setAdapter(impayeeAdapter);
+                                    btnSubmit.setEnabled(true);
 
                                 }else if(result.get("code").toString().equals("502")){
                                     progressDialog.dismiss();
                                     Intent intent = new Intent(getActivity(), MainActivity.class);
                                     startActivity(intent);
                                     getActivity().finish();
+
+                                }else if(result.get("code").toString().equals("550")){
+                                    progressDialog.dismiss();
+                                    Toast.makeText(getActivity(), "Aucune quittance impayée trouvée pour ce numéro de contrat", Toast.LENGTH_LONG).show();
 
                                 }else{
                                     progressDialog.dismiss();
